@@ -18,4 +18,10 @@ Este é um projeto de exemplo de uma API de lista de contatos construída com Sp
 - MySQL
 - Maven
 
+## 🌐 Redes Sociais
 
+- LinkedIn: [João Ricci](https://www.linkedin.com/in/joaoriccideveloper/)
+
+---
+
+Este projeto foi desenvolvido como exemplo de aplicação Spring Boot para gerenciamento de uma lista de contatos, utilizando MySQL como banco de dados.
