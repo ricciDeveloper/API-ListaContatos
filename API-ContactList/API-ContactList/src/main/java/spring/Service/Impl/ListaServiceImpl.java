@@ -47,4 +47,10 @@ public class ListaServiceImpl implements ListaService {
     public void deletarContato(Long id) {
         listaRepository.deleteById(id);
     }
+
+    @Override
+    public List<ListaContatos> buscarPorNome(String nomeContato) {
+
+        return listaRepository.findByNomeContatoContainingIgnoreCase(nomeContato);
+    }
 }

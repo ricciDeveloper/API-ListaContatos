@@ -8,7 +8,7 @@ import spring.Service.ListaService;
 import java.util.List;
 
 @RestController
-@RequestMapping("contatos")
+@RequestMapping("/contatos")
 public class ListRestController {
     private final ListaService listaService;
 
@@ -41,5 +41,14 @@ public class ListRestController {
     public ResponseEntity<ListaContatos> deletarContato(@PathVariable Long id){
         listaService.deletarContato(id);
         return ResponseEntity.ok().build();
+    }
+
+    @GetMapping("/search")
+    public ResponseEntity<List<ListaContatos>> buscarPorNome(@RequestParam("nomeContato") String nomeContato){
+        List<ListaContatos> contatos = listaService.buscarPorNome(nomeContato);
+        if(contatos.isEmpty()){
+            return ResponseEntity.noContent().build();
+        }
+        return ResponseEntity.ok(contatos);
     }
 }

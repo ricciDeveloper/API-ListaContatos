@@ -16,4 +16,6 @@ public interface ListaService {
     void atualizarContato(Long id, ListaContatos contato);
 
     void deletarContato(Long id);
+
+    List<ListaContatos> buscarPorNome(String nomeContato);
 }
