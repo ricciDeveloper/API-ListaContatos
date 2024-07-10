@@ -51,4 +51,12 @@ public class ListRestController {
         }
         return ResponseEntity.ok(contatos);
     }
+    @GetMapping("/search/apelido")
+    public ResponseEntity<List<ListaContatos>> buscarPorApelido(@RequestParam("apelido") String apelido){
+        List<ListaContatos> contatos = listaService.buscarPorApelido(apelido);
+        if(contatos.isEmpty()){
+            return ResponseEntity.noContent().build();
+        }
+        return ResponseEntity.ok(contatos);
+    }
 }

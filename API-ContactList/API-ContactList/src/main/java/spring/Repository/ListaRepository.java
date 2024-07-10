@@ -11,4 +11,5 @@ import java.util.List;
 public interface ListaRepository extends JpaRepository<ListaContatos, Long> {
 
     List<ListaContatos> findByNomeContatoContainingIgnoreCase(String nomeContato);
+    List<ListaContatos> findByApelidoContainingIgnoreCase(String apelido);
 }

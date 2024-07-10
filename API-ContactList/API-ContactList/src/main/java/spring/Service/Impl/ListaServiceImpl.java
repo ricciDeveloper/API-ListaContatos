@@ -53,4 +53,9 @@ public class ListaServiceImpl implements ListaService {
 
         return listaRepository.findByNomeContatoContainingIgnoreCase(nomeContato);
     }
+
+    @Override
+    public List<ListaContatos> buscarPorApelido(String apelido) {
+        return listaRepository.findByApelidoContainingIgnoreCase(apelido);
+    }
 }

@@ -18,4 +18,5 @@ public interface ListaService {
     void deletarContato(Long id);
 
     List<ListaContatos> buscarPorNome(String nomeContato);
+    List<ListaContatos> buscarPorApelido(String apelido);
 }
