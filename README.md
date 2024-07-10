@@ -6,6 +6,8 @@ Este é um projeto de exemplo de uma API de lista de contatos construída com Sp
 
 - 📄 Listar todos os contatos
 - 🔍 Buscar contato por ID
+- 🔍 Buscar contato por nome
+- 🔍 Buscar contato por apelido
 - ➕ Adicionar um novo contato
 - ✏️ Atualizar um contato existente
 - ❌ Deletar um contato
