@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    background-image: url(./Assets/bg-desktop.jpg) ;
+  }
+  
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    color: #333;
+}
+
+#contact-list {
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 90%;
+    width: 500px;
+    
+}
+
+.contact {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.container{
+    margin: 24px;
+    padding: 24px;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    align-items: center;
+}
